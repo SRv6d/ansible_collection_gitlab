@@ -65,6 +65,7 @@ jobs:
         run: pip3 install -r requirements.txt
       - name: install testing pip requirements
         run: pip3 install -r .github/molecule-requirements.txt
+      - run: pip list
       - name: run molecule tests
         run: molecule test -s ${{ matrix.scenario }}
         working-directory: roles/${{ matrix.role }}
