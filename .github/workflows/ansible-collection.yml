@@ -8,6 +8,7 @@ env:
 jobs:
   ansible-collection-build-publish:
     runs-on: ubuntu-22.04
+    environment: publish
     steps:
       - uses: actions/checkout@v3
         with:

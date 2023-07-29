@@ -12,6 +12,7 @@ env:
 jobs:
   molecule-test:
     runs-on: ubuntu-20.04
+    environment: testing
     strategy:
       fail-fast: false
       matrix:
